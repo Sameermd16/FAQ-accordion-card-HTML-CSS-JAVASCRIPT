@@ -1,15 +1,12 @@
-const arrows = document.querySelector(".arrow");
-const answer = document.querySelector(".answer");
 
+const question = document.querySelectorAll(".question");
 
+question.forEach((question) => question.addEventListener("click", () => {
+    if(question.parentNode.classList.contains("active")){
+        question.parentNode.classList.toggle("active");
+    }else{
+        document.querySelectorAll(".question").forEach(question => question.parentNode.classList.remove("active"));
+        question.parentNode.classList.add("active");
+    }
+}))
 
-arrows.addEventListener("click", () => {
-    answer.style.display = "block";
-})
-
-
-// arrows.forEach((arrow) => {
-//     arrow.addEventListener("click", () => {
-//         arrow.style.display = "block";
-//     })
-// })
