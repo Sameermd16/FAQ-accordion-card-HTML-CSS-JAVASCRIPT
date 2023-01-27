@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: Kumbh Sans, sans-serif;
+  gap: 30px;
+}
+.container{
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 900px;
+  padding: 50px 30px;
+  border-radius: 25px;
+  /* border: 1px solid white; */
+}
+.question{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 50px;
+}
+.pics-box{
+  display: flex;
+  position: relative;
+}
+.pics-box img:nth-child(2){
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  left: -50px;
+}
+.pics-box img:nth-child(1){
+  width: 150px;
+  position: absolute;
+  top: 30%;
+  left: -90px;
+  z-index: 2;
+}
+.faq-box{
+  padding-right: 50px;
+  font-size: 13px;
+  /* border: 1px solid black; */
+}
+h1{
+  margin-bottom: 30px;
+}
+hr{
+  margin: 10px 0;
+}
+
+.answer{
+  display: none;
+}
