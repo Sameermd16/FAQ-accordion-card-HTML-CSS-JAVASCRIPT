@@ -9,4 +9,3 @@ question.forEach((question) => question.addEventListener("click", () => {
         question.parentNode.classList.add("active");
     }
 }))
-

@@ -71,7 +71,6 @@ h1{
 }
 hr{
   margin: 10px 0;
-  
 }
 
 .question_answer > .answer{
@@ -79,7 +78,10 @@ hr{
 }
 .question > img{
   cursor: pointer;
-  transition: 0.3s;
+}
+
+.question > img:clicked{
+  transform: rotate(-180deg);
 }
 .active > .answer{
   display: block;
