@@ -93,3 +93,20 @@ h3{
 .active h3{
   font-weight: 700;
 }
+@media only screen and (max-width: 900px){
+  .container{
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 300px; */
+  }
+  .pics-box img:nth-child(2){
+    position: static;
+  }
+  .pics-box img:nth-child(1){
+    left: -10px;
+    top: 150px;
+  }
+  h1{
+    text-align: center;
+    margin-top: 20px;
+  }
+}
